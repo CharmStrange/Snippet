@@ -30,8 +30,8 @@ def send_email(smtp_info, msg):
 
 
 # 메일 내용 작성
-title = "소중한 고객님, 3000포인트 지급이 완료되었습니다." 
-content = "~~고객님, 3000포인트 지급이 완료되었습니다.\n확인해보시길 바랍니다."
+title = "타이틀" 
+content = ""
 sender = "<보내는 사람의 이메일>"
 receiver = "email@naver.com" #받는 사람의 이메일
 

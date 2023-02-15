@@ -43,4 +43,4 @@ msg['From'] = sender       # 송신자
 msg['To'] = receiver       # 수신자
 
 
-send_email(smtp_info, msg )
+#send_email(smtp_info, msg )

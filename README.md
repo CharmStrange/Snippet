@@ -9,3 +9,5 @@
 ## 데이크스트라 알고리즘
 - <https://blog.naver.com/zetmond/223029426051>
 - - -
+## 퀵 정렬과 이진 탐색
+- <https://blog.naver.com/zetmond/223031416970>

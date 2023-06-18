@@ -1,6 +1,7 @@
 ; 변수 초기화
 start := 1
 
+; X, Y 좌표는 WindowSpy를 사용해 적합한 좌표 탐색
 grassplaceX := 1015
 grassplaceY := 419
 

@@ -1,6 +1,6 @@
 ### 여기 위치한 오토핫키(ahk)파일들은 전부 GrowTopia 자동 농장 시스템의 일부
 
-클라이언트의 무한 터치 버그를 활용 : BasicLaser.ahk 설명
+클라이언트의 무한 터치 버그를 활용 : LaserGird.ahk 설명
 
 *EXECUTE ahk File -> Client FullScreen Mode -> Touch Button On -> CLick Punch Button and PRESS 'Alt Tab' -> Return to Client -> PRESS F1*
 ```

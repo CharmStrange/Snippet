@@ -1,6 +1,6 @@
 ### 여기 위치한 오토핫키(ahk)파일들은 전부 GrowTopia 자동 농장 시스템의 일부
 
-클라이언트의 무한 터치 버그를 활용 : LaserGird.ahk 설명
+클라이언트의 무한 터치 버그를 활용 : [LaserGird.ahk](https://github.com/CharmStrange/Snippet/blob/main/Games/GrowTopia/AutoHotkey/LaserGrid.ahk) 설명
 
 *EXECUTE ahk File -> Client FullScreen Mode -> Touch Button On -> CLick Punch Button and PRESS 'Alt Tab' -> Return to Client -> PRESS F1*
 ```
@@ -36,7 +36,7 @@ F3::
 <img width="200" alt="image" src="https://github.com/CharmStrange/Snippet/assets/105769152/6ffd8c2a-5ced-4952-9df8-5eb916ce9458">
 <img width="69" alt="image" src="https://github.com/CharmStrange/Snippet/assets/105769152/6a5d028c-c5a4-427c-a152-5e74258828b1">
 
-MAGPLANT 5000 이 있다면 Get Remote 후 아래 스크립트를 실행.
+MAGPLANT 5000 이 있다면 Get Remote 후 아래 [스크립트](https://github.com/CharmStrange/Snippet/blob/main/Games/GrowTopia/AutoHotkey/MAGPLANT_LG.ahk)를 실행.
 
 ```
 ; 변수 초기화

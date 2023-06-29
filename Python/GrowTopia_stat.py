@@ -1,4 +1,5 @@
 import statistics
+import random
 from sklearn.linear_model import LinearRegression
 
 # Function to get user input as a list of integers
@@ -6,11 +7,21 @@ def get_user_input(prompt):
     values = input(prompt).split()
     return [int(value) for value in values]
 
+# Function to generate random data
+def generate_random_data(min_val, max_val, num_samples):
+    return [random.randint(min_val, max_val) for _ in range(num_samples)]
+
 # Get user input for the data : This is vector!
-daily_restock = get_user_input("Enter daily restock values (separated by spaces): ")
-daily_visitors = get_user_input("Enter daily visitors values (separated by spaces): ")
-soldout_seeds = get_user_input("Enter soldout seeds values (separated by spaces): ")
-daily_my_ads = get_user_input("Enter daily My ADS values (separated by spaces): ")
+# daily_restock = get_user_input("Enter daily restock values (separated by spaces): ")
+# daily_visitors = get_user_input("Enter daily visitors values (separated by spaces): ")
+# soldout_seeds = get_user_input("Enter soldout seeds values (separated by spaces): ")
+# daily_my_ads = get_user_input("Enter daily My ADS values (separated by spaces): ")
+
+# Generate random data
+daily_restock = generate_random_data(0, 5000, 50)
+daily_visitors = generate_random_data(0, 15, 50)
+soldout_seeds = generate_random_data(0, 5000, 50)
+daily_my_ads = generate_random_data(0, 15, 50)
 
 # Calculate statistics
 restock_mean = statistics.mean(daily_restock)

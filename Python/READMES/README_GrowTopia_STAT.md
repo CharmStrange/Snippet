@@ -135,6 +135,93 @@ MSE of sold items:  1392562.4923213236
 ```
 오차가 좀 크긴 하지만 고작 10개의 데이터 치고는 괜찮은 직선의 모습이다. 데이터가 너무 적은 것이 원인인 듯 하지만 현재보다 더 많은 실제 데이터를 축적해 나가면 더욱 괜찮은 예측치를 알아낼 수 있을 것이다.
 
++
+
+추가로 데이터를 스케일링하면 오차가 좀 줄어들지 않을까 싶어서 해 보았는데 큰 차이는 없었다. 역시나 데이터 수의 부족함이 문제되는것 같다.
+```
+from sklearn.preprocessing import StandardScaler
+
+# Standardization
+scaler = StandardScaler()
+scaled_Data_std = scaler.fit_transform(Data)
+
+scaled_Data_std_df = pd.DataFrame(scaled_Data_std, columns=Columns, index=Index)
+
+scaled_Data_std_df
+
+LR_V = LinearRegression()
+LR_S = LinearRegression()
+
+LR_V.fit(scaled_Data_std_df['Number of ADS'].values.reshape(-1, 1), scaled_Data_std_df['Number of Visitors'].values.reshape(-1, 1))
+LR_S.fit(scaled_Data_std_df['Number of Restock'].values.reshape(-1, 1), scaled_Data_std_df['Number of sold items'].values.reshape(-1, 1))
+
+predicted_visitors = LR_V.predict([[13], [14], [8], [7], [7], [0], [0], [0], [9], [10]])  # give Number of ADS in params
+predicted_sold_items = LR_S.predict([[4800], [3200], [600], [6600], [1200], [800], [0], [600], [1561], [2800]])  # give Number of Restock in params
+
+# Adjust negative predictions to 0
+predicted_visitors = [max(0, value[0]) for value in predicted_visitors]
+predicted_sold_items = [max(0, value[0]) for value in predicted_sold_items]
+
+print('predicted visitors:', predicted_visitors)
+print('predicted sold items:', predicted_sold_items)
+
+# Calculate MSE
+mse_visitors = mean_squared_error(scaled_Data_std_df['Number of Visitors'].values.reshape(-1, 1), predicted_visitors)
+mse_sold_items = mean_squared_error(scaled_Data_std_df['Number of sold items'].values.reshape(-1, 1), predicted_sold_items)
+
+print('MSE of visitors: ', mse_visitors)
+print('MSE of sold items: ', mse_sold_items)
+```
+```
+predicted visitors: [11.77742099917544, 12.683376460650475, 7.247643691800271, 6.3416882303252375, 6.3416882303252375, 0, 0, 0, 8.153599153275305, 9.05955461475034]
+predicted sold items: [4431.605755547653, 2954.4038370317685, 553.9507194434566, 6093.457913878022, 1107.9014388869132, 738.6009592579421, 8.88241302397551e-17, 553.9507194434566, 1441.1951217520595, 2585.1033574027974]
+
+MSE of visitors:  53.84245232013412
+MSE of sold items:  7661501.684724535
+```
+
+```
+from sklearn.preprocessing import MinMaxScaler
+
+# Normalization
+scaler = MinMaxScaler()
+scaled_Data_mms = scaler.fit_transform(Data)
+
+scaled_Data_mms_df = pd.DataFrame(scaled_Data_mms, columns=Columns, index=Index)
+
+scaled_Data_mms_df
+
+LR_V = LinearRegression()
+LR_S = LinearRegression()
+
+LR_V.fit(scaled_Data_mms_df['Number of ADS'].values.reshape(-1, 1), scaled_Data_mms_df['Number of Visitors'].values.reshape(-1, 1))
+LR_S.fit(scaled_Data_mms_df['Number of Restock'].values.reshape(-1, 1), scaled_Data_mms_df['Number of sold items'].values.reshape(-1, 1))
+
+predicted_visitors = LR_V.predict([[13], [14], [8], [7], [7], [0], [0], [0], [9], [10]])  # give Number of ADS in params
+predicted_sold_items = LR_S.predict([[4800], [3200], [600], [6600], [1200], [800], [0], [600], [1561], [2800]])  # give Number of Restock in params
+
+# Adjust negative predictions to 0
+predicted_visitors = [max(0, value[0]) for value in predicted_visitors]
+predicted_sold_items = [max(0, value[0]) for value in predicted_sold_items]
+
+print('predicted visitors:', predicted_visitors)
+print('predicted sold items:', predicted_sold_items)
+
+# Calculate MSE
+mse_visitors = mean_squared_error(scaled_Data_mms_df['Number of Visitors'].values.reshape(-1, 1), predicted_visitors)
+mse_sold_items = mean_squared_error(scaled_Data_mms_df['Number of sold items'].values.reshape(-1, 1), predicted_sold_items)
+
+print('MSE of visitors: ', mse_visitors)
+print('MSE of sold items: ', mse_sold_items)
+```
+```
+predicted visitors: [13.201084277969446, 14.208477082306558, 8.164120256283885, 7.156727451946773, 7.156727451946773, 0.1049778215869886, 0.1049778215869886, 0.1049778215869886, 9.171513060620997, 10.178905864958109]
+predicted sold items: [4398.808345002317, 2932.5289985865347, 549.8250606608892, 6048.3726097200715, 1099.6798155668075, 733.109978962862, 0, 549.8250606608892, 1430.5090931018683, 2565.959161982589]
+
+MSE of visitors:  65.92838783134934
+MSE of sold items:  7549335.969611017
+```
+
 ---
 ### 결론
 이번에 진행한 회귀 분석은 머신 러닝에서 주로 사용하는 사이킷런 라이브러리의 알고리즘만 빌려와 주어진 데이터에서 유의미한 인사이트를 추출하는데에 그쳤다. 하지만 더 나아가 레이블 제공, 오차 줄이기, 데이터 크롤링 봇 제작에 활용 등 기능을 향상시켜 많은 유저들이 사용 가능한 프로그램(소스 코드 공개)이 될 수 있게끔 만들어 보겠다.

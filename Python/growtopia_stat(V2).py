@@ -117,3 +117,10 @@ plt.ylabel('Number of sold items')
 plt.title('Number of Restock vs Number of sold items')
 plt.legend()
 plt.show()
+
+# Calculate MSE
+mse_visitors = mean_squared_error(Data['Number of Visitors'].values.reshape(-1, 1), predicted_visitors)
+mse_sold_items = mean_squared_error(Data['Number of sold items'].values.reshape(-1, 1), predicted_sold_items)
+
+print('MSE of visitors: ', mse_visitors)
+print('MSE of sold items: ', mse_sold_items)

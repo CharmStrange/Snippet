@@ -119,7 +119,21 @@ plt.show()
 <img width="411" alt="image" src="https://github.com/CharmStrange/Snippet/assets/105769152/6ce6e232-a3b1-48e4-b457-897e4abbdbb8">
 <img width="429" alt="image" src="https://github.com/CharmStrange/Snippet/assets/105769152/18cdd8d6-8124-48bf-96ae-c1a02679bd21">
 
-오차가 조금 있긴 하지만 고작 10개의 데이터 치고는 괜찮은 직선이 나왔다. 현재보다 더 많은 실제 데이터를 축적해 나가면 더욱 괜찮은 예측치를 알아낼 수 있을 것이다.
+```
+# 오차 구하기
+
+mse_visitors = mean_squared_error(Data['Number of Visitors'].values.reshape(-1, 1), predicted_visitors)
+mse_sold_items = mean_squared_error(Data['Number of sold items'].values.reshape(-1, 1), predicted_sold_items)
+
+print('MSE of visitors: ', mse_visitors)
+print('MSE of sold items: ', mse_sold_items)
+```
+```
+>>>
+MSE of visitors:  3.5810438634865918
+MSE of sold items:  1392562.4923213236
+```
+오차가 좀 크긴 하지만 고작 10개의 데이터 치고는 괜찮은 직선의 모습이다. 데이터가 너무 적은 것이 원인인 듯 하지만 현재보다 더 많은 실제 데이터를 축적해 나가면 더욱 괜찮은 예측치를 알아낼 수 있을 것이다.
 
 ---
 ### 결론

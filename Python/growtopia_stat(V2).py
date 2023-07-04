@@ -124,3 +124,73 @@ mse_sold_items = mean_squared_error(Data['Number of sold items'].values.reshape(
 
 print('MSE of visitors: ', mse_visitors)
 print('MSE of sold items: ', mse_sold_items)
+
+### TEST ###
+
+from sklearn.preprocessing import StandardScaler
+
+# Standardization
+scaler = StandardScaler()
+scaled_Data_std = scaler.fit_transform(Data)
+
+scaled_Data_std_df = pd.DataFrame(scaled_Data_std, columns=Columns, index=Index)
+
+scaled_Data_std_df
+
+LR_V = LinearRegression()
+LR_S = LinearRegression()
+
+LR_V.fit(scaled_Data_std_df['Number of ADS'].values.reshape(-1, 1), scaled_Data_std_df['Number of Visitors'].values.reshape(-1, 1))
+LR_S.fit(scaled_Data_std_df['Number of Restock'].values.reshape(-1, 1), scaled_Data_std_df['Number of sold items'].values.reshape(-1, 1))
+
+predicted_visitors = LR_V.predict([[13], [14], [8], [7], [7], [0], [0], [0], [9], [10]])  # give Number of ADS in params
+predicted_sold_items = LR_S.predict([[4800], [3200], [600], [6600], [1200], [800], [0], [600], [1561], [2800]])  # give Number of Restock in params
+
+# Adjust negative predictions to 0
+predicted_visitors = [max(0, value[0]) for value in predicted_visitors]
+predicted_sold_items = [max(0, value[0]) for value in predicted_sold_items]
+
+print('predicted visitors:', predicted_visitors)
+print('predicted sold items:', predicted_sold_items)
+
+# Calculate MSE
+mse_visitors = mean_squared_error(scaled_Data_std_df['Number of Visitors'].values.reshape(-1, 1), predicted_visitors)
+mse_sold_items = mean_squared_error(scaled_Data_std_df['Number of sold items'].values.reshape(-1, 1), predicted_sold_items)
+
+print('MSE of visitors: ', mse_visitors)
+print('MSE of sold items: ', mse_sold_items)
+
+from sklearn.preprocessing import MinMaxScaler
+
+# Normalization
+scaler = MinMaxScaler()
+scaled_Data_mms = scaler.fit_transform(Data)
+
+scaled_Data_mms_df = pd.DataFrame(scaled_Data_mms, columns=Columns, index=Index)
+
+scaled_Data_mms_df
+
+LR_V = LinearRegression()
+LR_S = LinearRegression()
+
+LR_V.fit(scaled_Data_mms_df['Number of ADS'].values.reshape(-1, 1), scaled_Data_mms_df['Number of Visitors'].values.reshape(-1, 1))
+LR_S.fit(scaled_Data_mms_df['Number of Restock'].values.reshape(-1, 1), scaled_Data_mms_df['Number of sold items'].values.reshape(-1, 1))
+
+predicted_visitors = LR_V.predict([[13], [14], [8], [7], [7], [0], [0], [0], [9], [10]])  # give Number of ADS in params
+predicted_sold_items = LR_S.predict([[4800], [3200], [600], [6600], [1200], [800], [0], [600], [1561], [2800]])  # give Number of Restock in params
+
+# Adjust negative predictions to 0
+predicted_visitors = [max(0, value[0]) for value in predicted_visitors]
+predicted_sold_items = [max(0, value[0]) for value in predicted_sold_items]
+
+print('predicted visitors:', predicted_visitors)
+print('predicted sold items:', predicted_sold_items)
+
+# Calculate MSE
+mse_visitors = mean_squared_error(scaled_Data_mms_df['Number of Visitors'].values.reshape(-1, 1), predicted_visitors)
+mse_sold_items = mean_squared_error(scaled_Data_mms_df['Number of sold items'].values.reshape(-1, 1), predicted_sold_items)
+
+print('MSE of visitors: ', mse_visitors)
+print('MSE of sold items: ', mse_sold_items)
+
+### 

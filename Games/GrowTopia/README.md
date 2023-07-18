@@ -6,3 +6,4 @@ USB에 게임 파일을 모두 옮겨두고 클라이언트를 실행, 이후 US
 >[2023.07.17]
 >Third Party Program : 730 days ban
 >```
+해결 진행중

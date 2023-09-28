@@ -1,3 +1,3 @@
 # ggplot
 
-# geom_bar
+# geom_bar()

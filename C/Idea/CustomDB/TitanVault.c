@@ -13,6 +13,9 @@ void DynamicAllocation(int size){
     s = malloc(sizeof(struct structure));
 
     struct structure* Array = (struct structure*)malloc(sizeof(struct structure) * size);
+
+    free(s);
+    free(Array);
     
 }
 

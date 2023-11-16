@@ -21,5 +21,5 @@ void DynamicAllocation(int size){
 
 int main() {
     DynamicAllocation(5);
-   return DONE; 
+    return DONE; 
 }

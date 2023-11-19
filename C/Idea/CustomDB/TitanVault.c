@@ -10,57 +10,61 @@ struct structure {
     double data_double;
 };
 
+// 메인 데이터베이스 구조체
 struct Database {
     struct structure* Array;
     int size;
     int capacity;
 };
 
-void initializeDatabase(struct Database* db, int initialCapacity) {
-    db->Array = (struct structure*)malloc(sizeof(struct structure) * initialCapacity);
-    db->size = 0;
-    db->capacity = initialCapacity;
+// 매개 변수 : 메인 데이터베이스와 데이터베이스 크기
+void initialize_Database(struct Database* db, int initialCapacity) {
+    db -> Array = (struct structure*)malloc(sizeof(struct structure) * initialCapacity);
+    db -> size = 0;
+    db -> capacity = initialCapacity;
 }
 
-void resizeDatabase(struct Database* db) {
-    db->capacity *= 2;
-    db->Array = (struct structure*)realloc(db->Array, sizeof(struct structure) * db->capacity);
+// 가변적인 데이터베이스 구현의 핵심 함수
+void resize_Database(struct Database* db) {
+    db -> capacity *= 2;
+    db -> Array = (struct structure*)realloc(db -> Array, sizeof(struct structure) * db -> capacity);
 }
 
-void addToDatabase(struct Database* db, short header, int data_int, double data_double) {
-    if (db->size == db->capacity) {
-        resizeDatabase(db);
+// 데이터베이스 내 구조체에 실제 데이터 삽입하는 함수
+void add_To_Database(struct Database* db, short header, int data_int, double data_double) {
+    if (db -> size == db -> capacity) {
+        resize_Database(db);
     }
 
-    struct structure newEntry = {header, data_int, data_double};
-    db->Array[db->size++] = newEntry;
+    struct structure new_structure = {header, data_int, data_double};
+    db -> Array[db -> size++] = new_structure;
 }
 
-void printDatabase(const struct Database* db) {
+void print_Database(const struct Database* db) {
     printf("Database:\n");
-    for (int i = 0; i < db->size; ++i) {
-        printf("Entry %d: Header=%d, Data Int=%d, Data Double=%.2f\n", i + 1, db->Array[i].header,
-               db->Array[i].data_int, db->Array[i].data_double);
+    for (int i = 0; i < db -> size; ++i) {
+        printf("structure %d: Header=%d, Data Int=%d, Data Double=%.2f\n", i + 1, db -> Array[i].header,
+               db -> Array[i].data_int, db -> Array[i].data_double);
     }
 }
 
-void freeDatabase(struct Database* db) {
-    free(db->Array);
-    db->size = 0;
-    db->capacity = 0;
+void free_Database(struct Database* db) {
+    free(db -> Array);
+    db -> size = 0;
+    db -> capacity = 0;
 }
 
 int main() {
-    struct Database myDatabase;
-    initializeDatabase(&myDatabase, 5);
+    struct Database testDatabase;
+    initialize_Database(&testDatabase, 5);
 
-    addToDatabase(&myDatabase, 1, 42, 3.14);
-    addToDatabase(&myDatabase, 2, 99, 2.718);
-    addToDatabase(&myDatabase, 3, 123, 1.618);
+    add_To_Database(&testDatabase, 1, 42, 3.14);
+    add_To_Database(&testDatabase, 2, 99, 2.718);
+    add_To_Database(&testDatabase, 3, 123, 1.618);
 
-    printDatabase(&myDatabase);
+    print_Database(&testDatabase);
 
-    freeDatabase(&myDatabase);
+    free_Database(&testDatabase);
 
     return DONE;
 }

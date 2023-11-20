@@ -56,6 +56,7 @@ void free_Database(struct Database* db) {
 
 int main() {
     struct Database testDatabase;
+    // 메인 데이터베이스와 초기 크기를 인자로 줌 
     initialize_Database(&testDatabase, 5);
 
     add_To_Database(&testDatabase, 1, 42, 3.14);

@@ -66,6 +66,7 @@ int main() {
     print_Database(&testDatabase);
 
     free_Database(&testDatabase);
+    //print_Database(&testDatabase);
 
     return DONE;
 }

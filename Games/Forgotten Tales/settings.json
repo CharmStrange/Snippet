@@ -1,0 +1,266 @@
+{
+  "USE_UDP" : false,
+  "SERIALIZATION_VERSION" : 1,
+  "TILE_SIZE" : 32,
+  "BIG_TILE_SIZE" : 16,
+  "GAME_TYPE": "MMO",
+  "GAME_PACKAGE": "com.dmstudio.ftmmorpg",
+  "DROP_ITEM_TIME": 60000,
+  "FACEBOOK_URL": "https://www.facebook.com/groups/ForgottenTalesMMORPG",
+  "INSTAGRAM_URL": "https://www.instagram.com/dmgamestudio/",
+  "DISCORD_URL": "https://discord.gg/TXYMrUnCQr",
+  "VK_URL": "https://ftvk.dmgamestudio.com",
+  "FORUM_URL": "https://forum.dmgamestudio.com",
+  "CONFIG_URL": "https://config.dmgamestudio.com/ftmmorpg.php?version=",
+  "GAME_RULES": "https://forum.dmgamestudio.com/viewtopic.php?f=25&t=2560",
+  "CREDITS_URL": "https://dmgamestudio.com/credits.html",
+  "MIN_VERSION": "8.0",
+  "PURCHASABLE_ITEMS": [
+    815,
+    793,
+    654,
+    601,
+    602,
+    603,
+    604,
+    605,
+    606,
+    607,
+    608,
+    609,
+    610,
+    673,
+    731,
+    652
+  ],
+  "SOUNDTRACKS": [
+    [
+      "soundtrack_noctilucent",
+      "soundtrack_ume",
+      "soundtrack_wave_function"
+    ],
+    [
+      "soundtrack_dark_corridors",
+      "soundtrack_descent",
+      "soundtrack_pandorum",
+      "soundtrack_whispers"
+    ],
+    [
+      "soundtrack_dreamweaver",
+      "soundtrack_moth",
+      "soundtrack_pandorum"
+    ],
+    [
+      "soundtrack_tavern"
+    ],
+    [
+      "thunderstorm"
+    ],
+    [
+      "soundtrack_cave"
+    ],
+    [
+      "soundtrack_seas"
+    ],
+    [
+      "soundtrack_pirates"
+    ]
+  ],
+  "SHARE_URL": {
+    "android": "https://play.google.com/store/apps/details?id=com.dmstudio.ftmmorpg&referrer="
+  },
+  "GAMES_ADVERT": {
+    "android": "OmegaVanitas https://play.google.com/store/apps/details?id=com.dmstudio.omega",
+    "ios": "OmegaVanitas https://apps.apple.com/us/app/omega-vanitas/id1463783949"
+  },
+  "ALL_CHARACTERS": "ň\"ęЄІЇ\u200BАБВ–ГДЕЖЗИЙ’КЛМ“Н”ОПР!СТУ$Ф%Х&Ц…'Ч(Ш)Щ*Ъ+Ы,Ь-Э.Ю/Я0а1б2в3г4д5е6ж7з8и9й:к;л<м=н>о?п@рAсBтCуDфEхFцGчHшIщJъKыLьMэNюOяPQёRSTєUVіWїXYZ[\\]_abcdefghijklmnopqrstuvwxyz{}Ґґ ¡©«\u00AD±³´º»¿ÀÁÂÃÄÇÈÉÊÍÎÓÖÚÜÝÞßàáâãäçèéêëìíîïðñòóôõöùúûüýþ\uFEFFĄąĆćČčĐđĘęĞğİıŁłŃńŐőœŚśŞşŠšűŹźŻżŽž�§‰|əƏşŞŮŇŘÝĚĎŤůňřýěďť",
+  "LABEL_CHARACTERS": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 _-[]()",
+  "DEFAULT_SERVER": "main",
+  "SERVERS": {
+    "main": "178.63.101.234:6000:5999",
+    "test": "178.63.101.234:9000:5999",
+    "local": "127.0.0.1:5000:5999"
+  },
+  "ANTIALIASING": true,
+  "CORPSE_DISPLAY_TIME": 3000,
+  "FALLBACK_FONT": "DroidSansFallback",
+  "ANALYTICS_KEY": "8a5e0837f6e08ed61a1e329ea4b4eb80",
+  "ANALYTICS_SKEY": "8fba15db846ddfd16ceead68c8743e1fa6c6d700",
+  "CRAFTING_CATEGORIES": 6,
+  "SUPPORTED_LANGUAGES": [
+    "en;English",
+    "ar;Arabic",
+    "az;Azerbaijani",
+    "cs;Čeština",
+    "zh_CN;Chinese Simplified",
+    "zh_TW;Chinese Traditional",
+    "de;Deutsch",
+    "es;Español",
+    "fr;Français",
+    "it;Italiano",
+    "ja;Japanese",
+    "ko;Korean",
+    "ku;Kurdish",
+    "hu;Magyar",
+    "pl;Polski",
+    "pt;Português",
+    "ru;Русский",
+    "sr;Srpski",
+    "fi;Suomi",
+    "tr;Türkçe",
+    "uk;Українська"
+  ],
+  "HEROES": {
+    "swordsman": "13/damage:2,armor:2,dexterity:2,mana:0,hp:100/1.0,1.25,1.0,0.5,0.75,1.5",
+    "amazon": "416/damage:2,armor:2,dexterity:2,mana:0,hp:100/1.0,1.25,1.0,0.5,0.75,1.5",
+    "archer": "14/damage:2,armor:1,dexterity:3,mana:0,hp:80/0.75,1.0,0.5,1.25,1.5,1.0",
+    "huntress": "415/damage:2,armor:1,dexterity:3,mana:0,hp:80/0.75,1.0,0.5,1.25,1.5,1.0",
+    "dark_dwarf": "12/damage:3,armor:2,dexterity:1,mana:0,hp:120/1.5,1.25,0.5,1.0,1.0,0.75",
+    "freya": "83/damage:3,armor:2,dexterity:1,mana:0,hp:120/1.5,1.25,0.5,1.0,1.0,0.75",
+    "white_mage": "19/damage:1,armor:1,dexterity:2,mana:2,hp:70/1.0,0.75,1.25,1.5,1.0,0.5",
+    "fairy": "405/damage:1,armor:1,dexterity:2,mana:2,hp:70/1.0,0.75,1.25,1.5,1.0,0.5",
+    "ogre": "76/damage:3,armor:1,dexterity:1,mana:0,hp:140/0.5,1.0,1.5,0.75,1.0,1.25"
+  },
+  "CLICK_VIBRATE_TIME": 20,
+  "ANIMATION_FRAME_LENGTH": 100,
+  "BACKPACK_CAPACITY": 20,
+  "DISPLAYED_PARAMS": {
+    "DAMAGE": {
+      "type": "INTEGER"
+    },
+    "ARMOR": {
+      "type": "INTEGER"
+    },
+    "DEXTERITY": {
+      "type": "INTEGER"
+    },
+    "MANA": {
+      "type": "INTEGER"
+    },
+    "SPEED": {
+      "type": "INTEGER"
+    },
+    "RANGE": {
+      "type": "INTEGER"
+    },
+    "SPELL_PROTECTION": {
+      "type": "INTEGER"
+    },
+    "HP": {
+      "type": "INTEGER"
+    }
+  },
+  "MINIMUM_LEVEL_FOR_CLAN_CREATE": 20,
+  "DEFAULT_VIEWPORT_SIZE": 800,
+  "MIN_VIEWPORT_SIZE": 300,
+  "WORK_TYPES": [
+    {
+      "name": "mining",
+      "sound": "sword2",
+      "frame_sound": 7,
+      "frame_time": 100,
+      "direction": 8
+    },
+    {
+      "name": "felling",
+      "sound": "chop",
+      "frame_sound": 7,
+      "frame_time": 100,
+      "direction": 8
+    },
+    {
+      "name": "fishing",
+      "frame_time": 100,
+      "frame_pause": 4000,
+      "direction": 8
+    },
+    {
+      "name": "building",
+      "sound": "sword2",
+      "frame_sound": 7,
+      "frame_time": 100,
+      "direction": 8
+    },
+    {
+      "name": "digging",
+      "frame_time": 100,
+      "direction": 8
+    },
+    {
+      "name": "harvesting",
+      "frame_time": 100,
+      "direction": 8
+    },
+    {
+      "name": "sowing",
+      "frame_time": 100,
+      "direction": 8
+    }
+  ],
+  "CLAN_RANKS": [
+    {
+      "name": "duke",
+      "privileges": ["announce", "ally"],
+      "priority" : 3
+    },
+    {
+      "name": "member",
+      "privileges": [],
+      "priority" : 0
+    },  {
+      "name": "lord",
+      "privileges": [],
+      "priority" : 2
+    },  {
+      "name": "marshal",
+      "privileges": [],
+      "priority" : 1
+    }
+  ],
+  "DEFAULT_FONT" : "NotoSans-Regular",
+  "DEFAULT_BOLD_FONT" : "NotoSans-Bold",
+  "LABEL_FONT": "NotoSans-Bold",
+  "DEFAULT_FONT_COLOR" : -1,
+  "TEXT_INPUT_MAX_LENGTH" : 60,
+  "CONTEXT_MENU_COMMANDS" : {
+    "3" : ["ask", "remove_confirmation"],
+    "8" : ["ask", "sell_building_confirmation"],
+    "10" : ["chat", "/w %PLAYER "],
+    "21" : ["ask", "remove_confirmation"],
+    "24" : ["chat", "/p %PLAYER ", "GM: "]
+  },
+  "ENTITY_VCENTER" : 16,
+  "HP_BAR_VCENTER" : 32,
+  "STATE_ICON_VCENTER" : 48,
+  "STATE_ICON_HCENTER" : 36,
+  "TRADE_CONFIRMATION_TIME": 2,
+  "EMAIL_ON_REGISTRATION": false,
+  "BUILDINGS_ICONS" : {
+    "4000":	6,
+    "4001":	7,
+    "4012":	2,
+    "4014":	4,
+    "4010":	0,
+    "4011":	1,
+    "4013":	3,
+    "4015":	5,
+    "4031":	9,
+    "4030":	8,
+    "4016":	10
+  },
+
+  "EDITOR_FILL" : [
+    "conifer",
+    "tree",
+    "palms",
+    "cactus",
+    "oldtree",
+    "bush",
+    "ground",
+    "ground2",
+    "mountains",
+    "desert",
+    "lava",
+    "crystals"
+  ]
+}

@@ -1,0 +1,111 @@
+1 magic_animation1 animation frame_time:150 time_or_speed:4 background:true
+2 magic_animation2 animation frame_time:150 background:true
+3 magic_animation3 animation frame_time:150 pos:0.-20 background:true
+4 magic_animation4 animation frame_time:150 pos:0.-20 time_or_speed:20 background:true
+5 magic_animation5 animation frame_time:50 pos:0.-20 time_or_speed:20 background:true
+6 flames animation frame_time:100 pos:0.-12 time_or_speed:10
+7 magic_animation7 animation frame_time:150 time_or_speed:20
+8 magic_animation8 animation frame_time:150 background:true
+9 magic_animation9 animation frame_time:150 background:true
+10 magic_animation10 animation frame_time:150 time_or_speed:20
+11 magic_animation11 animation frame_time:150
+12 magic_animation12 animation frame_time:180 pos:0.-26 background:true
+13 magic_animation13 animation frame_time:150 pos:0.-20 time_or_speed:20 background:true
+14 magic_animation14 animation frame_time:150
+15 magic_animation15 animation frame_time:150 pos:0.-20 time_or_speed:20
+16 magic_animation16 animation frame_time:150 pos:0.-20 background:true
+17 magic_animation17 animation frame_time:150 pos:0.-20 time_or_speed:20
+18 magic_animation18 animation frame_time:100 pos:0.20 time_or_speed:20
+19 magic_animation19 animation frame_time:100 time_or_speed:25
+20 magic_animation20 animation frame_time:100
+21 magic_animation21 animation frame_time:100 pos:0.-20
+22 magic_animation22 animation frame_time:150 pos:0.-20
+23 magic_animation23 animation frame_time:150 pos:0.-20
+24 magic_animation24 animation frame_time:100
+25 magic_animation25 animation frame_time:100
+26 magic_animation26 animation frame_time:100
+28 fire_arrow_impact particles time_or_speed:500 background:true attached_effect:124
+29 ice_arrow_impact particles time_or_speed:500 background:true
+30 portal_animation particles
+31 ogre_twister particles time_or_speed:20000 background:true
+32 magic_animation2_1 particles time_or_speed:5000 attached_effect:50
+33 magic_animation3_1 particles time_or_speed:5000 attached_effect:51
+34 magic_animation1_1 particles time_or_speed:5000 attached_effect:49
+35 magic_animation4_1 particles time_or_speed:5000 attached_effect:52
+36 magic_animation5_1 particles time_or_speed:5000 attached_effect:53
+37 fire_sword_impact particles time_or_speed:500 background:true attached_effect:124
+38 ice_sword_impact particles time_or_speed:500 background:true
+39 3000_staff_fireball particles time_or_speed:26
+40 3000_staff_impact particles time_or_speed:500 background:true attached_effect:124
+41 1000_staff_fireball particles time_or_speed:26
+42 1000_staff_impact particles time_or_speed:500 background:true attached_effect:124
+43 2000_staff_impact particles time_or_speed:500 background:true
+44 2000_staff_fireball particles time_or_speed:26
+45 unfreeze_potion particles time_or_speed:250 background:true
+46 mana_potion particles time_or_speed:250 background:true
+47 health_potion particles time_or_speed:250 background:true
+48 speed_potion particles time_or_speed:250 background:true
+49 magic_animation1_2 particles time_or_speed:5000 background:true
+50 magic_animation2_2 particles time_or_speed:5000 background:true
+51 magic_animation3_2 particles time_or_speed:5000 background:true
+52 magic_animation4_2 particles time_or_speed:5000 background:true
+53 magic_animation5_2 particles time_or_speed:5000 background:true
+91 yellowflag animation frame_time:100 time_or_speed:-1 background:true
+92 blueflag animation frame_time:100 time_or_speed:-1 background:true
+93 greenflag animation frame_time:100 time_or_speed:-1 background:true
+94 waterfall animation frame_time:150 time_or_speed:-1
+95 waterjet animation frame_time:60 time_or_speed:-1
+96 blackflag animation frame_time:100 time_or_speed:-1 background:true
+97 goldenfountain animation frame_time:100 time_or_speed:-1 background:true
+98 fountain animation frame_time:100 time_or_speed:-1 background:true
+99 eye animation frame_time:100 time_or_speed:-1
+100 digger animation frame_time:150 time_or_speed:-1
+101 smith animation frame_time:100 time_or_speed:-1
+102 farmer animation frame_time:100 time_or_speed:-1
+103 windmill animation frame_time:100 time_or_speed:-1
+104 cactus_plant animation frame_time:150 time_or_speed:-1
+105 fisherman animation frame_time:400 pos:50.30 time_or_speed:-1
+106 campfire_flame animation frame_time:150 pos:0.5 time_or_speed:-1
+107 tree animation frame_time:150 pos:20.0 time_or_speed:-1
+108 torch_flame animation frame_time:100 pos:0.40 time_or_speed:-1
+109 watermill animation frame_time:100 pos:-48.-48 time_or_speed:-1
+110 portal animation frame_time:150 time_or_speed:-1
+111 felling_e animation frame_time:140 pos:-25.-20 sound:chop time_or_speed:-1
+112 Crow/walk_n animation frame_time:100 time_or_speed:10
+113 Crow/walk_ne animation frame_time:100 time_or_speed:10
+114 Crow/walk_e animation frame_time:100 time_or_speed:10
+115 Crow/walk_se animation frame_time:100 time_or_speed:10
+116 Crow/walk_s animation frame_time:100 time_or_speed:10
+117 Crow/walk_sw animation frame_time:100 time_or_speed:10
+118 Crow/walk_w animation frame_time:100 time_or_speed:10
+119 Crow/walk_nw animation frame_time:100 time_or_speed:10
+120 camp_fire particles pos:0.50
+121 torch_fire particles pos:0.40
+122 small_chimney_smoke particles
+123 fire_trail particles attached_effect:124
+124 scorch particles background:true
+125 state1 animation frame_time:100
+126 state2 animation frame_time:100
+127 state3 animation frame_time:100
+128 state4 animation frame_time:100
+129 state5 animation frame_time:100
+130 state6 animation frame_time:100
+131 plasma_trail particles attached_effect:124
+501 arrow direction16 time_or_speed:26
+502 ice particles time_or_speed:26
+503 missiles image time_or_speed:26
+504 fire_arrow direction16 time_or_speed:26 attached_effect:515
+505 fish direction8_animation frame_time:100 time_or_speed:26
+506 knife animation frame_time:100 time_or_speed:26 path:throw
+507 axe direction8_animation frame_time:100 time_or_speed:26
+508 ice particles time_or_speed:26
+509 fireball particles time_or_speed:35
+510 launch particles time_or_speed:15
+511 fireworks particles
+512 fire particles time_or_speed:10
+513 raining particles
+514 snowing particles
+515 fire_arrow_effect particles time_or_speed:26
+516 arrow direction16 time_or_speed:26 attached_effect:517 name:ice_arrow
+517 ice_arrow_effect particles time_or_speed:26 background:false
+518 plasmaball particles time_or_speed:35

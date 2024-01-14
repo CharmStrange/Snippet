@@ -1,0 +1,176 @@
+{
+"com.badlogic.gdx.graphics.g2d.BitmapFont": {
+	"NotoSans-Regular": {
+		"file": "NotoSans-Regular.fnt"
+	}
+},
+"com.badlogic.gdx.graphics.Color": {
+	"white": {
+		"r": 1,
+		"g": 1,
+		"b": 1,
+		"a": 1
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle": {
+	"default": {
+		"up": "button_enabled"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.CheckBox$CheckBoxStyle": {
+	"default": {
+		"checkboxOn": "checkbox_on",
+		"checkboxOff": "checkbox_off",
+		"font": "NotoSans-Regular",
+		"fontColor": "white"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle": {
+	"default": {
+		"imageUp": "close"
+	},
+	"forum": {
+		"imageUp": "go_to_forum"
+	},
+	"instagram": {
+		"imageUp": "go_to_instagram"
+	},
+	"vk": {
+		"imageUp": "go_to_vk"
+	},
+	"facebook": {
+		"imageUp": "go_to_facebook"
+	},
+	"twitter": {
+		"imageUp": "go_to_twitter"
+	},
+	"question": {
+		"imageUp": "question"
+	},
+	"buy_button": {
+		"imageUp": "buy_button"
+	},
+	"share_button": {
+		"imageUp": "share_button"
+	},
+	"discord": {
+		"imageUp": "go_to_discord"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.ImageTextButton$ImageTextButtonStyle": {
+	"default": {
+		"imageUp": "button_enabled",
+		"font": "NotoSans-Regular"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
+	"default": {
+		"font": "NotoSans-Regular"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.List$ListStyle": {
+	"default": {
+		"font": "NotoSans-Regular",
+		"fontColorSelected": "white",
+		"fontColorUnselected": "white",
+		"selection": "button_enabled"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.ProgressBar$ProgressBarStyle": {
+	"default-horizontal": {
+		"background": "progress",
+		"knob": "vknob"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle": {
+	"default": {
+		"background": "frame",
+		"hScroll": "hscroll",
+		"hScrollKnob": "vknob",
+		"vScroll": "vscroll",
+		"vScrollKnob": "vknob"
+	},
+	"transparent": {
+		"background": "edittext",
+		"hScroll": "hscroll",
+		"hScrollKnob": "vknob",
+		"vScroll": "vscroll",
+		"vScrollKnob": "vknob"
+	},
+	"big_knob": {
+		"background": "frame",
+		"hScroll": "hscroll",
+		"hScrollKnob": "vknob",
+		"vScroll": "thumb",
+		"vScrollKnob": "thumb"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.SelectBox$SelectBoxStyle": {
+	"default": {
+		"font": "NotoSans-Regular",
+		"fontColor": "white",
+		"background": "button_enabled",
+		"scrollStyle": "default",
+		"listStyle": "default"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Slider$SliderStyle": {
+	"default-horizontal": {
+		"background": "hscroll",
+		"knob": "vknob"
+	},
+	"default-vertical": {
+		"background": "vscroll",
+		"knob": "thumb"
+	},
+	"red": {
+		"background": "progress",
+		"knob": "damage"
+	},
+	"green": {
+		"background": "progress",
+		"knob": "dexterity"
+	},
+	"blue": {
+		"background": "progress",
+		"knob": "mana"
+	},
+	"red_slider": {
+		"background": "hscroll",
+		"knob": "vknob_red"
+	},
+	"green_slider": {
+		"background": "hscroll",
+		"knob": "vknob_green"
+	},
+	"blue_slider": {
+		"background": "hscroll",
+		"knob": "vknob_blue"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle": {
+	"default": {
+		"font": "NotoSans-Regular",
+		"up": "button_enabled"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle": {
+	"default": {
+		"font": "NotoSans-Regular",
+		"fontColor": "white",
+		"background": "edittext",
+		"cursor": "cursor"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.TextTooltip$TextTooltipStyle": {
+	"default": {
+		"label": "default"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle": {
+	"default": {
+		"background": "frame",
+		"titleFont": "NotoSans-Regular"
+	}
+}
+}

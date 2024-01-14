@@ -1,0 +1,432 @@
+
+skin.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+NotoSans-Regular
+  rotate: false
+  xy: 1, 1127
+  size: 506, 170
+  orig: 506, 170
+  offset: 0, 0
+  index: -1
+accept_button
+  rotate: false
+  xy: 1854, 1964
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+armor
+  rotate: false
+  xy: 1346, 1840
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+background
+  rotate: false
+  xy: 1, 1299
+  size: 1024, 729
+  orig: 1024, 729
+  offset: 0, 0
+  index: -1
+button_enabled
+  rotate: false
+  xy: 1142, 1810
+  size: 82, 62
+  split: 9, 9, 12, 12
+  pad: 20, 20, 12, 12
+  orig: 82, 62
+  offset: 0, 0
+  index: -1
+buy_button
+  rotate: false
+  xy: 1529, 1898
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+checkbox_off
+  rotate: false
+  xy: 1310, 1838
+  size: 34, 34
+  orig: 34, 34
+  offset: 0, 0
+  index: -1
+checkbox_on
+  rotate: false
+  xy: 1, 299
+  size: 34, 34
+  orig: 34, 34
+  offset: 0, 0
+  index: -1
+clear_button
+  rotate: false
+  xy: 1644, 1964
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+close
+  rotate: false
+  xy: 607, 1215
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+cursor
+  rotate: false
+  xy: 213, 1118
+  size: 4, 7
+  split: 1, 1, 2, 2
+  pad: 0, 0, 0, 0
+  orig: 4, 7
+  offset: 0, 0
+  index: -1
+damage
+  rotate: false
+  xy: 1, 265
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+dexterity
+  rotate: false
+  xy: 1380, 1840
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+edittext
+  rotate: false
+  xy: 1027, 1808
+  size: 113, 64
+  split: 10, 10, 11, 9
+  orig: 113, 64
+  offset: 0, 0
+  index: -1
+erase_button
+  rotate: false
+  xy: 1, 749
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+fill_button
+  rotate: false
+  xy: 1739, 1898
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+frame
+  rotate: false
+  xy: 1529, 1964
+  size: 113, 64
+  split: 10, 10, 11, 9
+  orig: 113, 64
+  offset: 0, 0
+  index: -1
+go_to_discord
+  rotate: false
+  xy: 1, 335
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+go_to_facebook
+  rotate: false
+  xy: 1226, 1832
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+go_to_forum
+  rotate: false
+  xy: 1990, 1988
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+go_to_instagram
+  rotate: false
+  xy: 1941, 1922
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+go_to_twitter
+  rotate: false
+  xy: 1, 377
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+go_to_vk
+  rotate: false
+  xy: 553, 1141
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+grid_button
+  rotate: false
+  xy: 99, 847
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+hero_amazon
+  rotate: false
+  xy: 1, 1011
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+hero_archer
+  rotate: false
+  xy: 509, 1183
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+hero_dark_dwarf
+  rotate: false
+  xy: 1027, 1710
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+hero_fairy
+  rotate: false
+  xy: 1, 913
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+hero_freya
+  rotate: false
+  xy: 99, 1011
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+hero_huntress
+  rotate: false
+  xy: 1027, 1612
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+hero_ogre
+  rotate: false
+  xy: 1, 815
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+hero_swordsman
+  rotate: false
+  xy: 99, 913
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+hero_white_mage
+  rotate: false
+  xy: 1027, 1514
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+hp
+  rotate: false
+  xy: 1, 231
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+hscroll
+  rotate: false
+  xy: 1, 1109
+  size: 210, 16
+  orig: 210, 16
+  offset: 0, 0
+  index: -1
+mana
+  rotate: false
+  xy: 1414, 1840
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+minus_button
+  rotate: false
+  xy: 1027, 1316
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+move_button
+  rotate: false
+  xy: 1784, 1964
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+plus_button
+  rotate: false
+  xy: 1, 617
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+progress
+  rotate: false
+  xy: 509, 1281
+  size: 190, 16
+  orig: 190, 16
+  offset: 0, 0
+  index: -1
+question
+  rotate: false
+  xy: 1268, 1835
+  size: 40, 37
+  orig: 40, 37
+  offset: 0, 0
+  index: -1
+rotate_button
+  rotate: false
+  xy: 1027, 1448
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+screen_logo
+  rotate: false
+  xy: 1027, 1874
+  size: 500, 154
+  orig: 500, 154
+  offset: 0, 0
+  index: -1
+share_button
+  rotate: false
+  xy: 1599, 1898
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+skills_icons_0
+  rotate: false
+  xy: 1, 551
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+skills_icons_1
+  rotate: false
+  xy: 1809, 1898
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+skills_icons_2
+  rotate: false
+  xy: 1924, 1964
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+skills_icons_3
+  rotate: false
+  xy: 1, 485
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+skills_icons_4
+  rotate: false
+  xy: 1875, 1898
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+skills_icons_5
+  rotate: false
+  xy: 1, 419
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+thumb
+  rotate: false
+  xy: 509, 1139
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+tiles_button
+  rotate: false
+  xy: 1714, 1964
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+undo_button
+  rotate: false
+  xy: 1, 683
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+units_button
+  rotate: false
+  xy: 1027, 1382
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+vknob
+  rotate: false
+  xy: 607, 1185
+  size: 19, 28
+  orig: 19, 28
+  offset: 0, 0
+  index: -1
+vknob_blue
+  rotate: false
+  xy: 71, 785
+  size: 19, 28
+  orig: 19, 28
+  offset: 0, 0
+  index: -1
+vknob_green
+  rotate: false
+  xy: 99, 817
+  size: 19, 28
+  orig: 19, 28
+  offset: 0, 0
+  index: -1
+vknob_red
+  rotate: false
+  xy: 677, 1251
+  size: 19, 28
+  orig: 19, 28
+  offset: 0, 0
+  index: -1
+vscroll
+  rotate: false
+  xy: 1125, 1596
+  size: 14, 210
+  orig: 14, 210
+  offset: 0, 0
+  index: -1
+walk_button
+  rotate: false
+  xy: 1669, 1898
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1

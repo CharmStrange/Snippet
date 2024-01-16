@@ -5,4 +5,5 @@
 [Official Forgotten Tales PC version](https://forum.dmgamestudio.com/viewtopic.php?t=17401)
 
 Windows - start.bat 실행
+
 Linux - start.sh 실행

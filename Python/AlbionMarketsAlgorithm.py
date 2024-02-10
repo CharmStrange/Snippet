@@ -78,5 +78,6 @@ def MAIN():
     thetford = Thetford()
     bridgewatch = Bridgewatch()
     caerleon = Caerleon()
-    
-MAIN()
+
+if __name__ == '__main__':
+    MAIN()

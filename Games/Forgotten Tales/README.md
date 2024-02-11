@@ -28,3 +28,5 @@ Start-Process java -ArgumentList "-jar desktop2.jar 660 320" -NoNewWindow
 Start-Process java -ArgumentList "-jar desktop3.jar 660 320" -NoNewWindow
 ```
 `660 320` is size of client, it is customizable. 
+
+Actually, there's no need to do like that, just execute separate files! But you should know, same file cannot open twice, all clients must be different process(file).

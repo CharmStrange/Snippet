@@ -6,11 +6,28 @@ Cities = []
 
 # Dictionary 
 # (ID, ITEM_NAME) : ITEM_PRICE
+# (ID, ITEM_NAME) : ITEM_PRICE
 ITEMS = {
-    (0, 'ITEM_NAME_1') : 1,
-    (1, 'ITEM_NAME_2') : 1,
-    (2, 'ITEM_NAME_3') : 1
-    # ...
+    (0, 'T4_Bag') : 1000,
+    (1, 'T4_Sword') : 1500,
+    (2, 'T4_Armor') : 2000,
+    (3, 'T4_Shield') : 1800,
+    (4, 'T4_Helmet') : 1200,
+    (5, 'T4_Boots') : 1300,
+    (6, 'T4_Axe') : 1600,
+    (7, 'T4_Bow') : 1700,
+    (8, 'T4_Staff') : 1900,
+    (9, 'T4_Hammer') : 1750,
+    (10, 'T4_Mace') : 1650,
+    (11, 'T4_Dagger') : 1400,
+    (12, 'T4_Cape') : 1100,
+    (13, 'T4_Robe') : 1550,
+    (14, 'T4_Tome') : 1450,
+    (15, 'T4_Fishing Rod') : 2100,
+    (16, 'T4_Hammer') : 2200,
+    (17, 'T4_Sickle') : 2300,
+    # These are just examples.
+    # Add more items as needed :
 }
 
 # Fort Sterling
@@ -168,10 +185,22 @@ class Caerleon:
     
     def buy_items_market(item):
         Market.remove(item)
+        
+    def sell_items_black_market(item):
+        Black_Market.append(item)
+    
+    def release_items_black_market(item):
+        Black_Market.remove(item)
   
     def __del__(self):
         pass
     
+def FIND_ITEM(Id, Name):
+    if ITEMS[Id, Name] in ITEMS:
+        return ITEMS[Id, Name]
+    else:
+        return None
+
 def MAIN():
     fort_sterling = FortSterling()
     lyumhurst = Lymhurst()

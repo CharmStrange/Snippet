@@ -4,9 +4,13 @@
 
 [Official Forgotten Tales PC version](https://forum.dmgamestudio.com/viewtopic.php?t=17401)
 
-Windows - start.bat 실행
+[Quick Download](https://dmgamestudio.com/files/ft8.zip)
 
-Linux - start.sh 실행
+Windows - Execute `start.bat`
+
+Linux - Execute `start.sh`
+
+`start.bat` and `start.sh` file can be edited with writing utilities.
 
 ---
 

@@ -21,3 +21,4 @@ Start-Process java -ArgumentList "-jar desktop1.jar 660 320" -NoNewWindow
 Start-Process java -ArgumentList "-jar desktop2.jar 660 320" -NoNewWindow
 Start-Process java -ArgumentList "-jar desktop3.jar 660 320" -NoNewWindow
 ```
+`660 320` is size of client, it is customizable. 

@@ -13,7 +13,7 @@ LuaContainers.List = {
     table.insert(list, item)
   end,
   
-  remove = function(list, index)
+  rmv = function(list, index)
     table.remove(list, index)
   end,
   

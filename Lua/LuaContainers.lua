@@ -1,25 +1,26 @@
 -- LuaContainers.lua
 
 local LuaContainers = {}
+empty = {}
 
-local List = {}
-setmetatable(List, LuaContainers)
-print(getmetatable(List))
+-- empty <-> LuaContainers
+local List = {setmetatable(empty, LuaContainers)}
 
-local DynamicList = {}
-setmetatable(DynamicList, LuaContainers)
-print(getmetatable(DynamicList))
 
-local Stack = {}
-setmetatable(Stack, LuaContainers)
-print(getmetatable(Stack))
+local Stack = {setmetatable(empty, LuaContainers)}
 
-local Queue = {}
-setmetatable(Queue, LuaContainers)
-print(getmetatable(Queue))
 
-local Deque = {}
-setmetatable(Deque, LuaContainers)
-print(getmetatable(Deque))
+local Queue = {setmetatable(empty, LuaContainers)}
 
-return LuaContainers  -- Returning LuaContainers at the end
+
+local Deque = {setmetatable(empty, LuaContainers)}
+
+
+
+
+local LuaContainers = {List, Stack, Queue, Deque}
+
+print(getmetatable(LuaContainers.List))
+
+
+--return LuaContainers  -- Returning LuaContainers at the end

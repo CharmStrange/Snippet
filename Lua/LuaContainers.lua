@@ -1,26 +1,82 @@
 -- LuaContainers.lua
 
-local LuaContainers = {}
-empty = {}
+List = {}
+Stack = {}
+Queue = {}
+Deque = {}
+LuaContainers = {List, Stack, Queue, Deque}
 
--- empty <-> LuaContainers
-local List = {setmetatable(empty, LuaContainers)}
+function List:new()
+    local container = setmetatable({}, self)
 
+    function container:INSERT(value)
+        container.insert(value)
+    end
+    
+    function continaer:REMOVE(index)
+        container.remove(container, index)
+    end
+    
+    function container:CLEAR()
+        
+    end
+    
+    return container
+    
+end
 
-local Stack = {setmetatable(empty, LuaContainers)}
+function Stack:new()
+    local container = setmetatable({}, self)
+    
+    function container:INSERT(value)
+        container.insert(value)
+    end
+    
+    function continaer:REMOVE(index)
+        container.remove(container, index)
+    end
+    
+    function container:CLEAR()
+        
+    end
+    
+    return container
+end
 
+function Queue:new()
+    local container = setmetatable({}, self)
+    
+    function container:INSERT(value)
+        container.insert(value)
+    end
+    
+    function continaer:REMOVE(index)
+        container.remove(container, index)
+    end
+    
+    function container:CLEAR()
+        
+    end
+    
+    return container
+end
 
-local Queue = {setmetatable(empty, LuaContainers)}
-
-
-local Deque = {setmetatable(empty, LuaContainers)}
-
-
-
-
-local LuaContainers = {List, Stack, Queue, Deque}
-
-print(getmetatable(LuaContainers.List))
-
+function Deque:new()
+    local container = setmetatable({}, self)
+    
+    function container:INSERT(value)
+        container.insert(value)
+    end
+    
+    function continaer:REMOVE(index)
+        container.remove(container, index)
+    end
+    
+    function container:CLEAR()
+        
+    end
+    
+    return container
+end
 
 --return LuaContainers  -- Returning LuaContainers at the end

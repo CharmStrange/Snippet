@@ -13,7 +13,7 @@ LuaContainers.List = {
     table.insert(list, item)
   end,
   
-  rmv = function(list, index)
+  remove = function(list, index)
     table.remove(list, index)
   end,
   
@@ -29,6 +29,15 @@ LuaContainers.List = {
     for k in ipairs(list) do
       list[k] = nil
     end
+  end,
+  
+  contains = function(list, item)
+    for _, value in ipairs(list) do
+      if value == item then
+        return true
+      end
+    end
+    return false
   end
 }
 
@@ -46,6 +55,9 @@ end
 LuaContainers.Stack.pop = function(stack)
   return table.remove(stack)
 end
+LuaContainers.Stack.peek = function(stack)
+  return stack[#stack]
+end
 
 -- Queue Class (inherits from List)
 LuaContainers.Queue = LuaContainers.List
@@ -54,6 +66,9 @@ LuaContainers.Queue.enqueue = function(queue, item)
 end
 LuaContainers.Queue.dequeue = function(queue)
   return table.remove(queue)
+end
+LuaContainers.Queue.peek = function(queue)
+  return queue[#queue]
 end
 
 -- Deque Class (inherits from List)
@@ -69,6 +84,12 @@ LuaContainers.Deque.pushBack = function(deque, item)
 end
 LuaContainers.Deque.popBack = function(deque)
   return table.remove(deque)
+end
+LuaContainers.Deque.peekFront = function(deque)
+  return deque[1]
+end
+LuaContainers.Deque.peekBack = function(deque)
+  return deque[#deque]
 end
 
 return LuaContainers

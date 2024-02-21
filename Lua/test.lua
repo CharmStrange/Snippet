@@ -1,4 +1,6 @@
 -- Create a Queue for enemy movement
+local LuaContainers = require("LuaContainers")
+
 local enemyMovementQueue = LuaContainers.Queue:new()
 
 -- Function to add enemy movement commands to the queue

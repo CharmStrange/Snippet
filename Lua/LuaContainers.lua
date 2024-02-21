@@ -62,6 +62,10 @@ function Queue:dequeue()
     return table.remove(self.elements, 1)
 end
 
+function Queue:isEmpty()
+    return #self.elements == 0
+end
+
 function Queue:clear()
     self.elements = {}
 end
@@ -117,6 +121,6 @@ function Deque:clear()
 end
 
 -- LuaContainers table containing all container types
-LuaContainers = {List, Stack, Queue, Deque}
+LuaContainers = {List = List, Stack = Stack, Queue = Queue, Deque = Deque}
 
-return LuaContainers  -- Returning LuaContainers at the end
+return LuaContainers

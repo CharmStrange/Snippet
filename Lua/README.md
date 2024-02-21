@@ -1,6 +1,6 @@
 ### Lua Library Scripts
 
-- [LuaContainers](LuaContainers.lua)
+- [LuaContainers](https://github.com/CharmStrange/LuaContainers)
 
 ### Basic Lua DOCs
 

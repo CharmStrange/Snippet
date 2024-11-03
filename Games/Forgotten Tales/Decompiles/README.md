@@ -5,12 +5,14 @@ Decompile with [jd-gui](https://java-decompiler.github.io/)
 ---
 
 1. Open [jd-gui](Games/Forgotten Tales/Decompiles/jd-gui-1.6.6.jar)
+   
    ![image](https://github.com/user-attachments/assets/fc29fce6-8619-410b-8897-7a2e0b5b090b)
 
-2. Find *.jar* file and open with it.
+3. Find *.jar* file and open with it.
+   
    ![image](https://github.com/user-attachments/assets/decb097d-615c-4652-95d6-c73f87ba7603)
 
-3. Check how file structure.
+5. Check how file structure.
    ```
    | --- META-INF
    | --- box2dLight
